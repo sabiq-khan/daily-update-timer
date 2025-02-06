@@ -2,7 +2,7 @@
 - systemd is the default init system on most modern Linux distros
 	- It is the first process (PID 1) started by the kernel which spawns all other userspace processes on the system
 	- It is also a powerful automation utility that can be used to start and run daemons and scripts with specific configurations
-- systemd operates on objects called units, whose configuration is defined in unit files located under `/etc/systemd
+- systemd operates on objects called units, whose configuration is defined in unit files located under `/etc/systemd`
 - There are different types of systemd units
 	- Services are scripts or programs that systemd can run and their configuration (including the path to their source, or what command to run, or how to run them) is defined in unit files ending in `.service`
 	- Timers are units that define how to run a pre-defined `.service` on a particular schedule, and they are defined in unit files ending in `.timer`
