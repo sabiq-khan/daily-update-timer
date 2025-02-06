@@ -1,0 +1,8 @@
+[Unit]
+Description=Updates system and application packages daily.
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "sudo apt update -y && sudo apt upgrade -y && flatpak update -y"
+User=root
+

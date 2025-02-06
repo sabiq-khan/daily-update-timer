@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for running daily system and application package updates
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=24h
+Unit=daily_update.service
+
+[Install]
+WantedBy=timers.target
+
